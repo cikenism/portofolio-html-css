@@ -109,7 +109,9 @@ section {
 }
 
 .about-desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-left: 6rem;
+    margin-right: 4rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     text-align: justify;
@@ -119,6 +121,7 @@ section {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    margin-left: 6rem;
     text-align: left;
 }
 
@@ -130,6 +133,15 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 12px 20px;
 }
 
 .menu-toggle {
