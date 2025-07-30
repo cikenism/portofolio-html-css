@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natia SPA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1. Loader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- 2. Navbar / Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">Natia</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">☰</div>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span>Natia</span></h1>
+      <p class="hero-subtitle">A Freelancer | Developer | Designer</p>
+      <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- 4. About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+  </section>
+
+  <!-- 5. Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="service-grid">
+        <!-- Repeat .service-card -->
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>Modern and responsive web design...</p>
+        </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Repeat .portfolio-item -->
+        <div class="portfolio-item">
+          <img src="project.jpg" alt="Project" />
+          <div class="overlay">Project Title</div>
+        </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Team Section -->
+  <section id="team" class="team-section">
+    <div class="container">
+      <h2>Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="member.jpg" alt="Team Member" />
+          <h4>Name</h4>
+          <p>Role</p>
+        </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 9. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Natia. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional: JS for smooth scroll, navbar toggle, etc -->
+  <script src="main.js"></script>
+</body>
+</html>
