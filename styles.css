@@ -93,7 +93,7 @@ section {
     margin: 0 auto;
 }
 
-.about-section, .projects-section, .services-section {
+.about-section, .projects-section, .services-section, .team-section {
     height: auto;
     display: flex;
     align-items: center;
