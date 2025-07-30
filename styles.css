@@ -5,7 +5,7 @@
 }
 
 body {
-    background: lightcoral;
+    background: white;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     color: black;
@@ -42,12 +42,13 @@ body {
 }
 
 .navbar a.active, .navbar a:hover {
-    color: rgb(220, 102, 102);
+    /* color: rgb(220, 102, 102); */
+    color: rgb(122, 122, 122);
 }
 
 .hero-section {
     height: 100vh;
-    background: linear-gradient(to right, lightcoral, rgb(215, 88, 88));
+    background: linear-gradient(to right, black, rgb(95, 90, 90));
     color: white;
     display: flex;
     align-items: center;
@@ -60,17 +61,26 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero-img {
+    border-radius: 50%;
+    margin-right: 4rem;
+    width: 300px;
+    height: 300px;
 }
 
 .btn-primary {
     background: white;
-    color: lightcoral;
+    color: black;
     padding: 0.5rem 1rem;
     border: none;
     margin-top: 1.5rem;
-    border-radius: 20px;
+    border-radius: 5px;
     text-decoration: none;
 }
 
@@ -83,8 +93,42 @@ section {
     margin: 0 auto;
 }
 
-.about-section, .projects-section, .services-section, .contact-section {
-    padding: 60px 20px;
+.about-section, .projects-section, .services-section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-img {
+    margin-right: 4rem;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.about-desc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.contact-section {
+    height: auto;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -95,11 +139,12 @@ section {
 }
 
 .footer {
-    /* background: lightgray; */
+    background: lightgray;
     padding: 20px;
     text-align: right;
     font-size: 14px;
-    color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @media (max-width: 768px) {
