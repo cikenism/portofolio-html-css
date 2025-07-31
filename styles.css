@@ -107,6 +107,23 @@ section {
     text-align: center;
 }
 
+.about-desc {
+    font-size: 1rem;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    text-align: left;
+}
+
 .profile-img {
     margin-right: 4rem;
     border-radius: 50%;
@@ -221,21 +238,30 @@ section {
     color: blueviolet;
 }
 
-.about-desc {
-    font-size: 1rem;
-    margin-left: 6rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    text-align: justify;
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
 }
 
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    margin-left: 6rem;
-    text-align: left;
+.team-card {
+    background: white;
+}
+
+.team-card img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team-position {
+    font-size: 14px;
+    color: gray;
 }
 
 .contact-section {
