@@ -89,7 +89,19 @@
             <section id="projects" class="projects-section">
                 <div class="container">
                     <h2>My Projects</h2>
-                    <p>Here is the showcase of my projects</p>
+                    <p class="projects-paragraph">Here is the showcase of my projects</p>
+
+                    <div class="projects-grid">
+                        <div class="projects-item">
+                            <img src="assets/1.jpg" alt="number">
+                        </div>
+                        <div class="projects-item">
+                            <img src="assets/2.jpg" alt="number">
+                        </div>
+                        <div class="projects-item">
+                            <img src="assets/3.jpg" alt="number">
+                        </div>
+                    </div>
                 </div>
             </section>
             
@@ -109,12 +121,21 @@
             <section id="contact" class="contact-section">
                 <div class="container">
                     <h2>Contact Me</h2>
-                    <p>If you have any questions or want to get in touch, feel free to contact me using the form below.</p>
+                    <p class="contact-paragraph">If you have any questions or want to get in touch, feel free to contact me using the form below.</p>
                     <form class="contact-form" action="#" method="post">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Your Email</label>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Your Message</label>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
                     </form>
                 </div>
             </section>
