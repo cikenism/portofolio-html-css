@@ -80,7 +80,7 @@ body {
     padding: 0.5rem 1rem;
     border: none;
     margin-top: 1.5rem;
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
@@ -127,8 +127,9 @@ section {
 .projects-item {
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 6px 16px white;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.03);
     transition: transform 0.3s;
+    margin-bottom: 1.5rem;
 }
 
 .projects-item img {
@@ -140,6 +141,86 @@ section {
 .projects-item:hover {
     transform: translateY(-5px);
 }
+
+.btn-see-more {
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.btn-see-more:hover {
+    background-color: rgb(94, 30, 154);
+    color: white;
+    transition: background 0.3s;
+}
+
+.services-paragraph {
+    margin-bottom: 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.service-category {
+    font-size: 14px;
+    color: lightgray;
+    margin-bottom: 8px;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.service-desc {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: color 0.2s;
+}
+
+.read-more:hover {
+    color: blueviolet;
+}
+
 .about-desc {
     font-size: 1rem;
     margin-left: 6rem;
