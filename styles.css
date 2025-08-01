@@ -64,7 +64,7 @@ body {
 
 .hero-subtitle {
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     margin-bottom: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -103,7 +103,7 @@ section {
     padding: 0 20px;
 }
 
-.about-section, .projects-section, .services-section, .team-section {
+.about-section, .projects-section, .skills-section, .experience-section {
     height: auto;
     display: flex;
     align-items: center;
@@ -117,10 +117,7 @@ section {
 
 .about-paragraph {
     font-size: 1rem;
-    margin-left: 6rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin: auto;
     text-align: justify;
 }
 
@@ -132,8 +129,7 @@ section {
 .table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
-    margin-left: 6rem;
+    margin: auto;
     text-align: left;
 }
 
@@ -181,11 +177,11 @@ section {
     transition: background 0.3s;
 }
 
-.services-paragraph {
+.skills-paragraph {
     margin-bottom: 1rem;
 }
 
-.services-grid {
+.skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -194,7 +190,7 @@ section {
     padding: 40px 20px; */
 }
 
-.service-card {
+.skill-card {
     background: white;
     padding: 30px;
     border: 1px solid black;
@@ -203,30 +199,34 @@ section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.service-card:hover {
+.skill-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
-.service-icon {
+.skill-icon {
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
 }
 
-.service-category {
+.skill-category {
     font-size: 14px;
     color: lightgray;
     margin-bottom: 8px;
 }
 
-.service-title {
+.about-title, .skills-title, .experience-title, .projects-title, .contact-title {
+    margin-bottom: 1.5rem;
+}
+
+.skill-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
-.service-desc {
+.skill-desc {
     font-size: 14px;
     color: gray;
     margin-bottom: 20px;
@@ -244,28 +244,28 @@ section {
     color: blueviolet;
 }
 
-.team-grid {
+.experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin: 0 auto;
 }
 
-.team-card {
+.experience-card {
     background: white;
 }
 
-.team-card img {
+.experience-card img {
     width: 50%;
     border-radius: 50%;
 }
 
-.team-name {
+.experience-name {
     font-size: 20px;
     font-weight: bold;
 }
 
-.team-position {
+.experience-position {
     font-size: 14px;
     color: gray;
 }
@@ -334,11 +334,11 @@ input, textarea {
 }
 
 .footer {
-    background: white;
+    background: black;
     padding: 20px;
     text-align: right;
     font-size: 14px;
-    color: black;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
