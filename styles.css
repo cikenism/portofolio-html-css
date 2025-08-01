@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     color: black;
+    overflow-x: hidden;
 }
 
 #header {
@@ -58,6 +59,7 @@ body {
 
 .hero-title {
     font-size: 3rem;
+    padding: 0 20px;
 }
 
 .hero-subtitle {
@@ -95,8 +97,10 @@ section {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-section, .projects-section, .services-section, .team-section {
@@ -107,7 +111,11 @@ section {
     text-align: center;
 }
 
-.about-desc {
+.about-section {
+    text-align: center;
+}
+
+.about-paragraph {
     font-size: 1rem;
     margin-left: 6rem;
     margin-right: 4rem;
@@ -116,19 +124,17 @@ section {
     text-align: justify;
 }
 
+.about-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
 .table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
     margin-left: 6rem;
     text-align: left;
-}
-
-.profile-img {
-    margin-right: 4rem;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
 }
 
 .projects-paragraph {
@@ -183,9 +189,9 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    max-width: 1100px;
+    /* max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 20px; */
 }
 
 .service-card {
@@ -269,6 +275,7 @@ section {
     background: black;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -283,8 +290,10 @@ section {
     flex-direction: column;
     gap: 1.5rem;
     max-width: 600px;
+    width: 100%;
     margin: 1rem auto;
     padding: 12px 20px;
+    box-sizing: border-box;
 }
 
 .form-group {
@@ -325,7 +334,7 @@ input, textarea {
 }
 
 .footer {
-    background: lightgray;
+    background: white;
     padding: 20px;
     text-align: right;
     font-size: 14px;
@@ -334,23 +343,26 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .navbar {
-        display: none; /* Hide by default */
+        display: none; 
         flex-direction: column;
-        background: white;
         position: absolute;
-        top: 60px; /* Below the header */
+        top: 60px; 
         left: 0;
-        width: 100%;
+        width: 100vw;
+        background: white;
         padding: 1rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .navbar .active {
-        display: flex; /* Show when active */
+        display: flex; 
     }
 
     .menu-toggle {
-        display: block; /* Show menu toggle on small screens */
+        display: block; 
     }
 }
