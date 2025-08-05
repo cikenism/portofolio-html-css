@@ -121,6 +121,22 @@ section {
     text-align: justify;
 }
 
+.about-details {
+    margin-top: 2rem;
+}
+
+.about-details dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 20px;
+    text-align: left;
+    max-width: 600px; /* Batasi lebar agar tidak terlalu renggang */
+    margin: 2rem auto 0;
+}
+
+.about-details dt {
+    font-weight: bold;
+}
 .about-img {
     width: 200px;
     border-radius: 50%;
@@ -330,6 +346,8 @@ input, textarea {
 .menu-toggle {
     display: none;
     cursor: pointer;
+    background: none;
+    border: none;
     font-size: 24px;
 }
 
@@ -342,27 +360,71 @@ input, textarea {
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-    }
-    .navbar {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        width: 100vw;
-        background: white;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* --- Tablet & Mobile Responsiveness --- */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 20px;
     }
 
-    .navbar .active {
-        display: flex; 
+    .navbar {
+        display: none; /* 1. Sembunyikan navigasi by default */
+        position: absolute;
+        top: 100%; /* 2. Posisikan tepat di bawah header */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex; /* 3. Tampilkan saat class 'active' ditambahkan oleh JS */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
     }
 
     .menu-toggle {
-        display: block; 
+        display: block; /* 4. Tampilkan tombol hamburger */
+    }
+
+    .hero-section {
+        flex-direction: column-reverse; /* Pindahkan gambar ke atas teks */
+        height: auto;
+        padding: 120px 20px 60px; /* Beri ruang untuk header dan konten */
+    }
+
+    .hero-image {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-details dl {
+        grid-template-columns: 1fr; /* Jadikan 1 kolom di mobile */
+        text-align: center;
+        gap: 5px 0;
+    }
+
+    .about-details dd {
+        margin-bottom: 1rem; /* Beri jarak antar item */
     }
 }
